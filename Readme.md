@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new iplookupQueryOptions {
+var queryOptions = new IPLookupQueryOptions {
   ip = "173.172.81.20"
 };
 ```
@@ -94,20 +94,21 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
+    "range": [
+      2913751040,
+      2913755135
+    ],
+    "country": "US",
+    "region": "MO",
+    "timezone": "America/Chicago",
     "city": "Kansas City",
     "coordinates": [
       39.0831,
       -94.5853
     ],
-    "country": "US",
-    "ip": "173.172.81.20",
-    "range": [
-      2913751040,
-      2913755135
-    ],
-    "region": "MO",
-    "timezone": "America/Chicago"
-  }
+    "ip": "173.172.81.20"
+  },
+  "code": 200
 }
 ```
 
