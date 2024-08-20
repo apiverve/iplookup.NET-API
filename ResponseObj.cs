@@ -6,26 +6,26 @@ namespace APIVerve
 {
 public class data
 {
-    [JsonProperty("city")]
-    public string city { get; set; }
-
-    [JsonProperty("coordinates")]
-    public double[] coordinates { get; set; }
+    [JsonProperty("range")]
+    public int[] range { get; set; }
 
     [JsonProperty("country")]
     public string country { get; set; }
-
-    [JsonProperty("ip")]
-    public string ip { get; set; }
-
-    [JsonProperty("range")]
-    public int[] range { get; set; }
 
     [JsonProperty("region")]
     public string region { get; set; }
 
     [JsonProperty("timezone")]
     public string timezone { get; set; }
+
+    [JsonProperty("city")]
+    public string city { get; set; }
+
+    [JsonProperty("coordinates")]
+    public double[] coordinates { get; set; }
+
+    [JsonProperty("ip")]
+    public string ip { get; set; }
 
 }
 
@@ -39,6 +39,9 @@ public class ResponseObj
 
     [JsonProperty("data")]
     public data data { get; set; }
+
+    [JsonProperty("code")]
+    public int code { get; set; }
 
 }
 
